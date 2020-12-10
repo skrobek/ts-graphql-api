@@ -3,6 +3,10 @@
   "url": "postgres://tsapi:tsapi@localhost/tsapi",
   "synchronize": true,
   "logging": false,
+  "cli": {
+    "entitiesDir": "src/models",
+    "migrationsDir": "src/migration"
+  },
   "entities": [
     "src/models/**/*.ts"
   ],
