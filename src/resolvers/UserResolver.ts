@@ -1,11 +1,11 @@
 import { Resolver, Query, Mutation, Arg } from 'type-graphql';
+
 import { User } from '../models/User';
 import { UpdateUserInput } from './inputs/UpdateUserInput';
 import { CreateUserInput } from './inputs/UserInput';
 
 @Resolver()
 export class UserResolver {
-
   @Query(() => [User])
   users() {
     return User.find()
